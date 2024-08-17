@@ -9,8 +9,8 @@ function validateInput() {
             input.value = input.value.slice(0, 1);
         } else {
 
-            document.getElementById('result').innerText = number ? number === "0" ? "Zero" : numberToWord(number) : "Please enter a number.";
-            document.getElementById('copyimg').src='copy.png';
+            document.getElementById('result').innerText = number ? number === "0" ? "Zero" : numberToWord(number) : "";
+            number?document.getElementById('copyimg').src='copy.png':document.getElementById('copyimg').src='';
         }
     }
 }
